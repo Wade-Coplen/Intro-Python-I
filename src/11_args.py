@@ -30,7 +30,7 @@ a = [7, 6, 5, 4]
 ##We need to access each index in the list. how do acces one index in a list?
 
 # How do you have to modify the f2 call below to make this work?
-print(f2(a++))    # Should print 22
+print(f2(22))    # Should print 22
     
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
@@ -38,7 +38,10 @@ print(f2(a++))    # Should print 22
 # Note: Google "python default arguments" for a hint.
 
 # YOUR CODE HERE
-
+def f3(x, y): 
+    
+    return 
+    
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
 
