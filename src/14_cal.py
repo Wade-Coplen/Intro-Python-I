@@ -30,3 +30,17 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+y = datetime.now().year
+m = datetime.now().month
+
+if len(sys.argv) == 1:
+    print(calendar.month(y, m))
+elif len(sys.argv) == 2 and int(sys.argv[1]) <= 12 and int(sys.argv[0]) > 0:
+    print(calendar.month(y, int(sys.argv[1])))
+elif len(sys.argv) == 3:
+      print(calendar.month(int(sys.argv[2]), int(sys.argv[1])))
+else:
+      print("Please pass in the month and year")
+
+
